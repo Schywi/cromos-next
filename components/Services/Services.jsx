@@ -23,7 +23,7 @@ const Services = (props) => {
                  <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={result.id*100} >
                     <div class="services__items-text">
                         <h6>{result.title}</h6>
-                        <a class="button serviceButton" href={`service/${result.id}`}>Find more</a>
+                        <a class="button serviceButton" href={`produtos/${result.id}`}>Find more</a>
                     </div>
                 </div>
                 
@@ -43,7 +43,7 @@ const Services = (props) => {
                         <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={(result.id-9)*200} >
                             <div class="services__items-text">
                                 <h6>{result.title}</h6>
-                                <a class="button serviceButton" href={`/pt/service/${result.id}`}>Find more</a>
+                                <a class="button serviceButton" href={`/produtos/${result.id}`}>Find more</a>
                             </div>
                         </div>
                         )

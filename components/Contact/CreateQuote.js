@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
- 
+
+
 // Use at least Nodemailer v4.1.0
 
 
@@ -37,7 +38,16 @@ const CREATE_LINK_MUTATION = gql`
 
 const CreateQuote = () => {
 
-   
+  const submitForm = (data) => {
+    console.log("erro", data)
+    fetch('/api/contact', {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })} 
 
     const [formState, setFormState] = useState({
         name: '',
@@ -78,8 +88,8 @@ const CreateQuote = () => {
       <form className="form" id="Contato"
         onSubmit={(e) => {
           e.preventDefault();
-          createQuote();
-     
+        
+          submitForm(formState);
           cancelCourse();
         }}
       >

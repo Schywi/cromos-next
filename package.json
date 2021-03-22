@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev"
+    "dev": "next dev",
+    "node": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,12 +16,15 @@
     "@zeit/next-sass": "^1.0.1",
     "aos": "^2.3.4",
     "apollo-link-error": "^1.1.13",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "formik": "^2.2.6",
     "graphql": "^15.5.0",
     "next": "^10.0.9",
     "next-images": "^1.7.0",
     "next-optimized-images": "^2.6.2",
-    "nodemailer": "^6.4.18",
+    "nodemailer": "^6.5.0",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.4.0",
     "react-chatbot-kit": "^1.1.2",
