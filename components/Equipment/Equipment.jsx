@@ -1,14 +1,11 @@
 import React from "react";
 import Image from 'next/image'
 
- 
-import eqp1 from '../../img/eqp1.jpg';
-import eqp2 from '../../img/eqp2.jpg';
-import eqp3 from '../../img/eqp3.jpg';
-import eqp4 from '../../img/eqp4.jpg';
+
  
 
 const About = (props) => { 
+    const arr = [1,2,3,4]
  return (
     <section class="main-container equipment" id="Equipamentos">
         <h2 data-aos="fade-right"> 
@@ -17,7 +14,7 @@ const About = (props) => {
         <div class="equipment__content">
             <div class="equipment__items" data-aos="fade-in" data-aos-delay="200">
                 <Image
-                    src={eqp1}
+                    src={'/equipament/eqp1.jpg'}
                     alt="Equipamento 1"
                     width={300}
                     height={300}
@@ -28,7 +25,7 @@ const About = (props) => {
             </div>
             <div class="equipment__items" data-aos="fade-in" data-aos-delay="400">
                  <Image
-                    src={eqp2}
+                    src={'/equipament/eqp2.jpg'}
                     alt="Equipamento 1"
                     width={300}
                     height={300}
@@ -38,7 +35,7 @@ const About = (props) => {
             </div>
             <div class="equipment__items" data-aos="fade-in" data-aos-delay="600">
                  <Image
-                    src={eqp3}
+                    src={'/equipament/eqp3.jpg'}
                     alt="Equipamento 1"
                     width={300}
                     height={300}
@@ -48,7 +45,7 @@ const About = (props) => {
             </div>
             <div class="equipment__items" data-aos="fade-in" data-aos-delay="800">
                  <Image
-                    src={eqp4}
+                    src={'/equipament/eqp4.jpg'}
                     alt="Equipamento 1"
                     width={300}
                     height={300}

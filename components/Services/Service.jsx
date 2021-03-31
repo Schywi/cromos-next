@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
+ 
 import BudgetFooter from "../Budget/BudgetFooter";
 import {db,db1} from '../db';
  
-
+import Image from 'next/image'
 
 
 
@@ -18,6 +18,7 @@ const Services = (props) => {
            
             <Header/>
                 <div class="dark">
+               
                     {db.map((item) => {
                         console.log(window)
                     if (typeof window !== 'undefined') { 
@@ -42,8 +43,17 @@ const Services = (props) => {
                                             <div class="services__content "> 
                                                 
                                                     { item.service.image.map(result => {
-                                                                
-                                                        return   <img class={"services__content-img" + (item.service.id)} src={result} alt="" data-aos="fade-in" data-aos-delay={200}/>
+                                                           
+                                                        return  <Image
+                                                        class={"services__content-img" + (item.service.id)} 
+                                                        alt="" 
+                                                        data-aos="fade-in" data-aos-delay={200}
+                                                        src={result}
+                                                        alt="Equipamento 1"
+                                                        width={200}
+                                                        height={200}
+                                                    />   
+                                                        
                                                     })}
                                             </div>
                             

@@ -61,6 +61,10 @@ header {
   text-align: left;
 }
 
+.nav {
+  position: relative;
+  z-index: 1;
+}
 .nav__list {
   list-style-type: none;
   display: flex;

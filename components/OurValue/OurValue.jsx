@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 
 
 const OurValue = (props) => { 
@@ -8,8 +8,17 @@ const OurValue = (props) => {
         
         <div class="main-container__wrap">
 
-        <div class="main-container__image  main-container__background-4 fix-vision  " data-aos="fade-in" data-aos-delay="600">
+        <div class="main-container__image  fix-vision  " data-aos="fade-in" data-aos-delay="600">
             
+             <Image
+                class="banners"
+                src={"/banners/b" + 3+ ".jpeg"}
+                alt="Equipamento 1"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+
+                />
             <div class="main-container__image-text main-container__content  main-container__wrap-content not-hidden">
                 <h3>Política de qualidade</h3>
                 <p>
@@ -18,7 +27,16 @@ const OurValue = (props) => {
             </div>
         </div>
         
-        <div class="main-container__image  main-container__background-5  fix-vision " data-aos="fade-in" data-aos-delay="400">
+        <div class="main-container__image  fix-vision " data-aos="fade-in" data-aos-delay="400">
+        <Image
+                class="banners"
+                src={"/banners/b" + 3+ ".jpeg"}
+                alt="Equipamento 1"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+
+                />
             <div class="main-container__image-text main-container__content  main-container__wrap-content wrap-padding">
                 <h3>Nossa Missão</h3>
                 <p>
@@ -26,7 +44,16 @@ const OurValue = (props) => {
                 </p>
             </div>
         </div>
-        <div class="main-container__image main-container__background-6 fix-vision  " data-aos="fade-in" data-aos-delay="200">
+        <div class="main-container__image fix-vision  " data-aos="fade-in" data-aos-delay="200">
+            <Image
+                class="banners"
+                src={"/banners/b" + 3+ ".jpeg"}
+                alt="Equipamento 1"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+
+                />
             <div class="main-container__image-text main-container__content  main-container__wrap-content wrap-padding">
                 <h3>Nossa Missão</h3>
                 <p>

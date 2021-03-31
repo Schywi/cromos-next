@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 
 
 const OurServices = () => { 
@@ -15,8 +15,18 @@ const OurServices = () => {
 
             <a class="button  button-larger"  href="#Services">Confira</a>
         </div>
-        <div class="main-container__image main-container__background-1"  data-aos="fade-left" data-aos-delay="600">
+        <div class="main-container__image "  data-aos="fade-left" data-aos-delay="600">
         
+      
+                <Image
+                class="banners"
+                src={"/banners/b" + 3+ ".jpeg"}
+                alt="Equipamento 1"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+
+                />
             <div class="main-container__image-text">
                 <p>
                 Somos peritos na fabricação de eixos, cubos, polias, engrenagens, pinhões, flanges , componentes hidráulicos ou qualquer componente Mecânico conforme desenho ou amostra. 

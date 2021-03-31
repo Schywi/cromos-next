@@ -1,11 +1,18 @@
 import React from "react";
 import {db,db1} from '../db';
- 
+import Image from 'next/image';
+
+
+
 
 const Services = (props) => { 
+    
  return (
     <div class="dark" id="Servicos">
+         
     <section class="main-container services">
+   
+                        
         <h2 data-aos="fade-right">
             <strong>Serviços Prestados</strong>
         </h2>
@@ -17,10 +24,23 @@ const Services = (props) => {
 
         {db1.map((result) => {
              if(result.id <=9) {
+                
+                 
+               
                 return (
                     
                  
                  <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={result.id*100} >
+                   
+                        <Image
+                            class="serviceImage"
+                              src={"/services/s" + result.id + ".jpg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                     <div class="services__items-text">
                         <h6>{result.title}</h6>
                         <a class="button serviceButton" href={`produtos/${result.id}`}>Find more</a>
@@ -41,6 +61,16 @@ const Services = (props) => {
                 if(result.id >=10 && result.id <=12) {
                     return (
                         <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={(result.id-9)*200} >
+                            
+                            <Image
+                            class="serviceImage"
+                              src={"/services/s" + result.id + ".jpg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                             <div class="services__items-text">
                                 <h6>{result.title}</h6>
                                 <a class="button serviceButton" href={`/produtos/${result.id}`}>Find more</a>
@@ -63,6 +93,15 @@ const Services = (props) => {
                 if(result.id >=13 && result.id <=15) {
                     return (
                         <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={(result.id-12)*200} >
+                            <Image
+                            class="serviceImage"
+                              src={"/services/s" + result.id + ".jpg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                             <div class="services__items-text">
                                 <h6>{result.title}</h6>
                                 <a class="button serviceButton" href={`/pt/service/${result.id}`}>Find more</a>
@@ -84,7 +123,16 @@ const Services = (props) => {
         {db1.map((result) => {
             if(result.id >=16) {
                 return (
-                    <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={(result.id-15)*200} >
+                    <div class={"services__items service" + (result.id)} data-aos="fade-in" data-aos-delay={(result.id-15)*100} >
+                        <Image
+                            class="serviceImage"
+                              src={"/services/s" + result.id + ".jpg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                         <div class="services__items-text">
                             <h6>{result.title}</h6>
                             <a class="button serviceButton" href={`/pt/service/${result.id}`}>Find more</a>

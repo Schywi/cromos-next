@@ -2,7 +2,7 @@ import React from "react";
 
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-
+import Image from 'next/image';
 
 const Banner = () => { 
 
@@ -10,7 +10,17 @@ const Banner = () => {
         <div class="banner">
         <div class="slideshow-container banner__content">
             <div class="pic-ctn">
+
             <section class=" mySlides fade banner1">
+                     <Image
+                            class="banners"
+                              src={"/banners/b" + 1+ ".jpg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                                 <div class="banner-text" data-aos="fade-up" data-aos-delay="200">
                                     <h1 class="banner__title">Usinagem em Geral</h1>
                                     <h2 class="banner__subtitle"> Fabricação e montagens de conjuntos, dispositivos, <br/> equipamentos e máquinas em geral </h2>
@@ -36,7 +46,17 @@ const Banner = () => {
        <div class="banner">
        <div class="slideshow-container banner__content">
            <div class="pic-ctn">
-           <section class=" mySlides fade banner2">
+           <section class=" mySlides fade banner1">
+             
+           <Image
+                            class="banners"
+                              src={"/banners/b" + 2+ ".jpeg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                <div class="banner-text" >
                    <h1 class="banner__title">Ferramentaria Especializada</h1>
                    <h2 class="banner__subtitle">  Produção de ferramentas de estampo, moldes para injeção de plástico e alumínio,
@@ -59,7 +79,17 @@ const Banner = () => {
       <div class="banner">
       <div class="slideshow-container banner__content">
           <div class="pic-ctn">
-          <section class=" mySlides fade banner3 ">
+          <section class=" mySlides fade banner1 ">
+                      
+                       <Image
+                            class="banners"
+                              src={"/banners/b" + 3+ ".jpeg"}
+                            alt="Equipamento 1"
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            
+                        />
                       <div class="banner-text">
                           <h1 class="banner__title">Confecção de componentes Hidráulicos</h1>
                           <h2 class="banner__subtitle"> Fabricação e recuperação de cilindros, macacos hidráulicos.</h2>

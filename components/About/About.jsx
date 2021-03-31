@@ -1,12 +1,20 @@
 import React from "react";
-
+import Image from 'next/image';
 
 
 const About = (props) => { 
  return (
     <section class="main-container main-responsive" id="Sobre">
-        <div class="main-container__image  main-container__background-2" data-aos="fade-right" data-aos-delay="400">
-        
+        <div class="main-container__image  " data-aos="fade-right" data-aos-delay="400">
+        <Image
+                class="banners"
+                src={"/banners/b" + 3+ ".jpeg"}
+                alt="Equipamento 1"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+
+                />
             <div class="main-container__image-text" >
                 <p>
                 CROMOS MÊCANICA. Localizada em Contagem. A Cromos é uma empresa fundada em 1999 voltada para prestação de serviços de usinagem de alta precisão com profissionais capacitados com mais de 28 anos de expêciencia para atender as demandas da indústria e a necessidade de nossos clientes.

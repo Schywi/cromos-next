@@ -1,13 +1,18 @@
 import React from "react";
-import logoG from '../../img/logoGreen.png';
-
+ 
+import Image from 'next/image';
 
 const FooterBanner = (props) => { 
  return (
     <footer >
         <div class="footer">
             <div class="footer__contacts">
-                <img src={logoG}alt=""/>
+            <Image
+                src={"/logoGreen.png"}
+                alt="Equipamento 1"
+               width={400}
+                 height={150}
+            />
                 <div class="footer__contacts-information">
             
                     <ul>

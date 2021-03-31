@@ -61,6 +61,10 @@ header {
   text-align: left;
 }
 
+.nav {
+  position: relative;
+  z-index: 1;
+}
 .nav__list {
   list-style-type: none;
   display: flex;
@@ -213,6 +217,51 @@ header {
   background: white;
   height: 50%;
   padding: 10rem 6rem;
+  /*
+      &__background {
+          &-1 {
+              background: url(../../img/2.jpg) no-repeat center ;
+              background-size: cover;
+              margin-left:2%;
+
+          }
+          &-2{
+              background: url(../../img/24.png) no-repeat center ;
+              background-size: cover;
+              margin-right:2%;
+
+
+          }
+          &-3{
+              background: url(../../img/13.jpeg) no-repeat center ;
+              background-size: cover;
+              margin-left:2%;
+
+          }
+          &-4{
+              background: url(../../img/n2.jpg) no-repeat center ;
+              background-size: cover;
+              margin-left:2%;
+              height: 100%;
+
+          }
+          &-5{
+              background: url(../../img/11.jpeg) no-repeat center ;
+              background-size: cover;
+              margin-left:2%;
+              height: 100%;
+
+          }
+          &-6{
+              background: url(../../img/12.jpeg) no-repeat center ;
+              background-size: cover;
+              margin-left:2%;
+              height: 100%;
+
+          }
+
+      }
+    */
 }
 .main-container h1, .main-container h2, .main-container h3, .main-container h4, .main-container h5, .main-container h6 {
   color: #333333;
@@ -275,39 +324,6 @@ header {
 .main-container__wrap-content:last-child {
   margin: 0;
 }
-.main-container__background-1 {
-  background: url(../../img/2.jpg) no-repeat center;
-  background-size: cover;
-  margin-left: 2%;
-}
-.main-container__background-2 {
-  background: url(../../img/24.png) no-repeat center;
-  background-size: cover;
-  margin-right: 2%;
-}
-.main-container__background-3 {
-  background: url(../../img/13.jpeg) no-repeat center;
-  background-size: cover;
-  margin-left: 2%;
-}
-.main-container__background-4 {
-  background: url(../../img/n2.jpg) no-repeat center;
-  background-size: cover;
-  margin-left: 2%;
-  height: 100%;
-}
-.main-container__background-5 {
-  background: url(../../img/11.jpeg) no-repeat center;
-  background-size: cover;
-  margin-left: 2%;
-  height: 100%;
-}
-.main-container__background-6 {
-  background: url(../../img/12.jpeg) no-repeat center;
-  background-size: cover;
-  margin-left: 2%;
-  height: 100%;
-}
 .main-container__image {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   height: 700px;
@@ -330,6 +346,8 @@ header {
   border-radius: inherit;
   background-color: rgba(30, 30, 30, 0.6);
   color: white;
+  position: relative;
+  z-index: 1;
   margin: 0;
   width: 100%;
 }
@@ -450,6 +468,8 @@ header {
   object-fit: cover;
 }
 .services__items-text {
+  position: relative;
+  z-index: 1;
   background-color: rgba(30, 30, 30, 0.7);
   color: white;
   margin: 0;
@@ -461,11 +481,7 @@ header {
 }
 
 .footer-banner {
-  background: url(../../img/10.jpeg) no-repeat center center fixed;
-  background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: overlay;
-  background-position: 50% top;
   width: 100%;
   padding: 140px 0;
   color: white;
@@ -474,6 +490,8 @@ header {
   justify-content: flex-end;
 }
 .footer-banner__wrap {
+  position: relative;
+  z-index: 1;
   padding-right: 6rem;
 }
 .footer-banner__wrap h2 {
@@ -544,6 +562,7 @@ header {
   font-weight: 500;
 }
 .partners__content {
+  height: 100%;
   width: 100%;
   display: flex;
   max-width: 1000px;
@@ -553,10 +572,6 @@ header {
 }
 .partners__items {
   padding-right: 1rem;
-}
-.partners__items a img {
-  height: 150px;
-  width: 150px;
 }
 
 .container-form {
@@ -657,106 +672,128 @@ header {
     font-size: 0.8rem;
   }
 }
-.service2 {
-  background: url(../../img/s5.jpg) no-repeat center;
-  background-size: cover;
+.serviceImage {
+  z-index: 0;
 }
 
-.service3 {
-  background: url(../../img/s4.jpg) no-repeat center;
-  background-size: cover;
+/*
+.service {
+    background: url(../../img/s5.jpg) no-repeat center ;
+    background-size: cover;
+
+
 }
+.service3 {
+    background: url(../../img/s4.jpg) no-repeat center ;
+    background-size: cover;
+
+}
+
 
 .service4 {
-  background: url(../../img/s11.jpg) no-repeat center;
-  background-size: cover;
-}
+    background: url(../../img/s11.jpg) no-repeat center ;
+    background-size: cover;
 
+}
 .service5 {
-  background: url(../../img/s12.jpg) no-repeat center;
-  background-size: cover;
-}
+    background: url(../../img/s12.jpg) no-repeat center ;
+    background-size: cover;
 
+}
 .service6 {
-  background: url(../../img/s9.jpg) no-repeat center;
-  background-size: cover;
-}
+    background: url(../../img/s9.jpg) no-repeat center ;
+    background-size: cover;
 
+}
 .service7 {
-  background: url(../../img/s7.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/s7.jpg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service8 {
-  background: url(../../img/s8.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/s8.jpg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service9 {
-  background: url(../../img/s6.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/s6.jpg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service10 {
-  background: url(../../img/s3.jpeg) no-repeat center;
-  background-size: cover;
-}
+    background: url(../../img/s3.jpg) no-repeat center ;
+    background-size: cover;
 
+}
 .service11 {
-  background: url(../../img/sf1.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/sf1.jpg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service12 {
-  background: url(../../img/34.jpeg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/34.jpeg) no-repeat center ;
+    background-size: cover;
+
+
 }
 
 .service13 {
-  background: url(../../img/s1.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/s1.jpg) no-repeat center ;
+    background-size: cover;
 }
 
 .service14 {
-  background: url(../../img/sch1.jpg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/sch1.jpg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service15 {
-  background: url(../../img/sch2.jpeg) no-repeat center;
-  background-size: cover;
+    background: url(../../img/sch2.jpeg) no-repeat center ;
+    background-size: cover;
+
 }
 
-.service16 {
-  background: url(../../img/30.jpeg) no-repeat center;
-  background-size: cover;
+
+.service16{
+    background: url(../../img/30.jpeg) no-repeat center ;
+    background-size: cover;
+
 }
 
-.service17 {
-  background: url(../../img/31.jpeg) no-repeat center;
-  background-size: cover;
+
+.service17{
+    background: url(../../img/31.jpeg) no-repeat center ;
+    background-size: cover;
+
 }
 
-.service18 {
-  background: url(../../img/23.jpeg) no-repeat center;
-  background-size: cover;
+.service18{
+    background: url(../../img/23.jpeg) no-repeat center ;
+    background-size: cover;
+
 }
 
-.service19 {
-  background: url(../../img/20.jpeg) no-repeat center;
-  background-size: cover;
-}
+.service19{
+    background: url(../../img/20.jpeg) no-repeat center ;
+    background-size: cover;
 
-.service20 {
-  background: url(../../img/14.jpeg) no-repeat center;
-  background-size: cover;
+}
+.service20{
+    background: url(../../img/14.jpeg) no-repeat center ;
+    background-size: cover;
+
 }
 
 .service21 {
-  background: url(../../img/29.jpeg) no-repeat center;
-  background-size: cover;
-}
+    background: url(../../img/29.jpeg) no-repeat center ;
+    background-size: cover;
 
+}*/
 /* Slideshow container */
 .slideshow-container {
   overflow: hidden;
@@ -785,12 +822,14 @@ header {
   position: relative;
 }
 
+.banners {
+  z-index: 0;
+  mix-blend-mode: multiply;
+  border-radius: 2%;
+}
+
 .pic-ctn .banner1 {
-  background: url(../../img/10.jpeg) no-repeat center center;
-  background-size: cover;
-  background-position: 50% top;
   background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
   padding: 2.2rem 0;
   width: 100%;
   height: 100vh;
@@ -802,54 +841,6 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.pic-ctn .banner2 {
-  background: url(../../img/12.jpeg) no-repeat center center;
-  background-size: cover;
-  background-position: 50% top;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  padding: 2.2rem 0;
-  width: 100%;
-  height: 100vh;
-  max-height: 580px;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.pic-ctn .banner3 {
-  background: url(../../img/13.jpeg) no-repeat center center;
-  background-size: cover;
-  background-position: 50% top;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  padding: 2.2rem 0;
-  width: 100%;
-  height: 100vh;
-  max-height: 580px;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 /* The dots/bullets/indicators */
